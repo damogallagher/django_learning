@@ -48,3 +48,5 @@ accessing local files or data
 
 Creating an APIView
 profiles_api --> open views.py
+
+Serializers can take care of validation
