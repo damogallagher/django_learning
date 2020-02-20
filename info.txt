@@ -17,7 +17,7 @@ Create a new django app within a project - a project can consist of 1 or more su
 Once manage.py is created, you need to use that instead of django-admin.py
 python3.7 manage.py startapp profiles_api
 
-Enable profiles app app in Django project
+Enable profiles_api app in Django project
 Open profiles project --> settings.py and update the INSTALLED_APPS section
 
 Test changes made to project - use the django development server

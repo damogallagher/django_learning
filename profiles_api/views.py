@@ -35,15 +35,15 @@ class HelloApiView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-    def put(self, request, primaryKey=None):
+    def put(self, request, primary_key=None):
         """Handle updating an object"""
         return Response({'method': 'PUT'})
 
-    def patch(self, request, primaryKey=None):
+    def patch(self, request, primary_key=None):
         """Handle a partial update of an object"""
         return Response({'method': 'PATCH'})
 
-    def delete(self, request, primaryKey=None):
+    def delete(self, request, primary_key=None):
         """Handle the delete of an object"""
         return Response({'method': 'DELETE'})
 
@@ -77,18 +77,18 @@ class HelloViewSet(viewsets.ViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-    def retrieve(self, request, primaryKey=None):
+    def retrieve(self, request, primary_key=None):
         """Handle getting an object by its Id"""
         return Response({'http_method': 'GET'})
 
-    def update(self, request, primaryKey=None):
+    def update(self, request, primary_key=None):
         """Handle updating an object by its Id"""
         return Response({'http_method': 'PUT'})
 
-    def partial_update(self, request, primaryKey=None):
+    def partial_update(self, request, primary_key=None):
         """Handle partially updating an object by its Id"""
         return Response({'http_method': 'PATCH'})
 
-    def destroy(self, request, primaryKey=None):
+    def destroy(self, request, primary_key=None):
         """Handle deleting an object by its Id"""
         return Response({'http_method': 'DELETE'})
