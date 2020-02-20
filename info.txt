@@ -1,0 +1,40 @@
+Install python requirements - using python3.7
+python3.7 -m pip install -r requirements.txt 
+
+Install python requirements - using default version of python
+pip install -r requirements.txt 
+
+View python versios
+https://pypi.org/project/djangorestframework/
+
+Create a new django project without sub folder - create folder in root of project, creates manage.py script
+django-admin.py startproject profiles_project .
+
+Create a new django project with sub folder
+django-admin.py startproject profiles_project
+
+Create a new django app within a project - a project can consist of 1 or more sub apps that can be used to separate functionality within a project
+Once manage.py is created, you need to use that instead of django-admin.py
+python3.7 manage.py startapp profiles_api
+
+Enable profiles app app in Django project
+Open profiles project --> settings.py and update the INSTALLED_APPS section
+
+Test changes made to project - use the django development server
+python3.7 manage.py runserver 127.0.0.1:8000
+
+DATABASE
+We use models - no need to write sql
+
+Create migrations for an app
+python3.7 manage.py makemigrations profiles_api
+
+Run all migrations in our project
+python3.7 manage.py migrate
+
+DJANGO ADMIN
+Need to register new modesl with Django admin
+Create a superuser - max privileges over database
+python3.7 manage.py createsuperuser
+
+Enable Django Admin
