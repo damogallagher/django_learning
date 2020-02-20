@@ -37,4 +37,14 @@ Need to register new modesl with Django admin
 Create a superuser - max privileges over database
 python3.7 manage.py createsuperuser
 
-Enable Django Admin
+APIView
+Basic view to build api - describe api endpoint
+Allows us to define functions to match standard http methods
+When to use APIViews -->
+need full control over application logic (complex algorithm or updating multiple datasources in 1 call),
+processing files and rendering a synchronous response,
+you are calling other APIs / services,
+accessing local files or data
+
+Creating an APIView
+profiles_api --> open views.py
