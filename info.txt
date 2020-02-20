@@ -50,3 +50,14 @@ Creating an APIView
 profiles_api --> open views.py
 
 Serializers can take care of validation
+
+ViewSets
+Accept functions that map to common api actions (list, create, retrieve, update, partial_update and destroy)
+Takes care of a lot of typical logic for us
+Perfect for standard database operations
+Fastest way to make a database interface
+When to use ViewSets:
+A simple CRUD interface to your database
+A quick and simple API
+Little to no customization on the logic
+Working with standard database structures
