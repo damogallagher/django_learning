@@ -61,3 +61,6 @@ A simple CRUD interface to your database
 A quick and simple API
 Little to no customization on the logic
 Working with standard database structures
+
+To test Authentication token in mod header in chrome
+Add the header named Authentication with a value of 'Token <your token>'
