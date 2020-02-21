@@ -4,7 +4,7 @@ python3.7 -m pip install -r requirements.txt
 Install python requirements - using default version of python
 pip install -r requirements.txt 
 
-View python versios
+View python versions
 https://pypi.org/project/djangorestframework/
 
 Create a new django project without sub folder - create folder in root of project, creates manage.py script
